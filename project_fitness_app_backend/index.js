@@ -2,6 +2,15 @@
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
+import { MongoMemoryServer } from 'mongodb-memory-server';
+
+// This will create an new instance of "MongoMemoryServer" and automatically start it
+const mongod = await MongoMemoryServer.create();
+
+const uri = mongod.getUri();
+
+
+
 import http from 'http';
 // const { Server } = require("socket.io");
 import {Server} from "socket.io";
@@ -66,7 +75,7 @@ const PORT= 5001;
 
 
 //Connecting to database
-mongoose.connect('mongodb://localhost:27017/Workoutdb');
+mongoose.connect(uri );
 
 
 app.use(bodyParser.json());
