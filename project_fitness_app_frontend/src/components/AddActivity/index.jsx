@@ -58,7 +58,7 @@ function AddActivity(props) {
     const handleSubmit = () => {
         console.log(activity)
 
-        fetch("http://localhost:5001/workout", {
+        fetch("https://fitnessplus.onrender.com/workout", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

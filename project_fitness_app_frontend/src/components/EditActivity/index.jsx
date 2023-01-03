@@ -55,7 +55,7 @@ function EditActivity(props) {
     const handleSubmit = action => {
 
 
-        const response = fetch(`http://localhost:5001/updateWorkout/${activity._id}`, {      //Api call to update the todo status
+        const response = fetch(`https://fitnessplus.onrender.com/updateWorkout/${activity._id}`, {      //Api call to update the todo status
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'

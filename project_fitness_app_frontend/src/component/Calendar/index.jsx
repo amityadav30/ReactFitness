@@ -96,7 +96,7 @@ function Calendar(props) {
         let queryDate = `${selectedDay.day}/${selectedDay.month + 1}/${selectedDay.year}`;
         console.log("date ", queryDate)
        
-        const response = await fetch(`http://localhost:5001/getWorkout?username=${userInfo.username}&date=${queryDate}`, {
+        const response = await fetch(`https://fitnessplus.onrender.com/getWorkout?username=${userInfo.username}&date=${queryDate}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded'

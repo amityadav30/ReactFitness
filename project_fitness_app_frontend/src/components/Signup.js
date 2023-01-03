@@ -39,7 +39,7 @@ function Signup(props) {
   const onSignup = async () => {
     if (validate()) {
       try {
-        await fetch("http://localhost:5001/signup", {
+        await fetch("https://fitnessplus.onrender.com/signup", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

@@ -108,7 +108,7 @@ function AddActivity(props) {
     // else console.log(body)
     // });
 
-    fetch("http://localhost:5001/meal", {
+    fetch("https://fitnessplus.onrender.com/meal", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

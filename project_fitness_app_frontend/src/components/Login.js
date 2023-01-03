@@ -45,7 +45,7 @@ const Login = (props) => {
     if (validate()) {
 
       try {
-        await fetch("http://localhost:5001/login", {
+        await fetch("https://fitnessplus.onrender.com/login", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

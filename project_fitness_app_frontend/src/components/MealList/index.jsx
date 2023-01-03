@@ -16,7 +16,7 @@ function ActivityList(props) {
 
     const deleteActivity = (i) => {
 
-        fetch(`http://localhost:5001/deleteMeal/${i}`, {
+        fetch(`https://fitnessplus.onrender.com/deleteMeal/${i}`, {
             method: 'DELETE'
         }).then((response) => {
             handleDelete(i);
