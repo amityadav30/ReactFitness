@@ -22,8 +22,8 @@ export const userContext = createContext();
 
 const App = () => {
 
-  const [loginStatus, setLoginStatus] = useState(false);
-  const [username, setUsername] = useState(null);
+  const [loginStatus, setLoginStatus] = useState(true);
+  const [username, setUsername] = useState('NewUser');
   const [MealDashboardStatus, setMealDashboardStatus] = useState(false);
 
   console.log(MealDashboardStatus);
